@@ -17,7 +17,7 @@ public class WeatherServiceImpl implements WeatherService {
 
     @Override
     public String getWeatherData(String city) throws WeatherServiceException {
-        // TODO: Implement logic here
+        // nao nao amigao
         return externalWeatherApi.fetchWeatherData(city);
     }
 }
