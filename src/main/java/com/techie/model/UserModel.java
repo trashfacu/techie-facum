@@ -1,18 +1,20 @@
 package com.techie.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.Table;
 import java.math.BigDecimal;
 
 @Data
-@Getter
-@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Table(name = "USERS")
 public class UserModel {
-
     private String name;
     private String email;
-    private int age;
+    private Integer age;
     private BigDecimal netWorth;
+
 }
